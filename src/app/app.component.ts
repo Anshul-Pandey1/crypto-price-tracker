@@ -5,6 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'price-tracker';
+export class AppComponent 
+
+{
+  selectedCurrency:string = "INR"
+
+  constructor() {}
+
+  sendCurrency(event:string)
+  {
+   console.log(event);
+  }
 }
